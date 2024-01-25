@@ -1,0 +1,534 @@
+Answer 1)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num >10) printf("number is greater than 10");
+    else printf("number is smaller than 10");
+}
+
+Output:
+enter number: 10
+number is not greater than 10
+
+---------------------------------------------------------------------------
+
+Answer 2)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num >50) printf("number is greater than 50");
+    else printf("number is not greater than 50");
+}
+
+Output:
+enter number: 50
+number is not greater than 50
+
+--------------------------------------------------------------------------
+
+Answer 3)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num >500) printf("number is greater than 500");
+    else printf("number is not greater than 500");
+}
+
+Output:
+enter number: 500
+number is not greater than 500
+
+--------------------------------------------------------------------------
+
+Answer4)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'a') printf("Apple");
+}
+
+Output:
+enter character: a
+Apple
+
+----------------------------------------------------------------
+
+Answer5)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'b') printf("Ball");
+    else{
+        printf("not match");
+    }
+}
+
+Output 1:
+enter character: b
+Ball
+
+Output 2:
+enter character: d
+not match
+
+------------------------------------------------------------------
+
+Answer6)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'c') printf("Cat");
+    else{
+        printf("not match");
+    }
+}
+
+Output 1:
+enter character: d
+not match
+
+Output2:
+enter character: c
+Cat
+
+------------------------------------------------------------------
+
+Answer7)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'a'){ 
+        int a,b;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("%d + %d = %d",a,b,a+b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output 1:
+enter character: a
+Enter 2 numbers: 2 3 
+2 + 3 = 5
+
+Output 2:
+enter character: v
+Sorry! not match
+
+--------------------------------------------------------------------
+
+Answer8)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 's'){ 
+        int a,b;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("%d - %d = %d",a,b,a-b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: s
+Enter 2 numbers: 5
+3
+5 - 3 = 2
+
+Output2:
+enter character: v
+Sorry! not match
+
+--------------------------------------------------------------------
+
+Answer9)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'd'){ 
+        int a,b;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("%d / %d = %d",a,b,a/b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: d
+Enter 2 numbers: 6
+3
+6 / 3 = 2
+
+Output2:
+enter character: v
+Sorry! not match
+
+-------------------------------------------------------------------------
+
+Answer 10)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'm'){ 
+        int a,b;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("%d * %d = %d",a,b,a*b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: m
+Enter 2 numbers: 5
+3
+5 * 3 = 15
+
+Output2:
+enter character: v
+Sorry! not match
+
+----------------------------------------------------------------------------
+
+Answer 11)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'o'){ 
+        int a,b;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("%d % %d = %d",a,b,a%b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: o
+Enter 2 numbers: 5
+3
+5 % 3 = 2
+
+Output2:
+enter character: v
+Sorry! not match
+
+---------------------------------------------------------------------------
+
+Answer12)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'm'){ 
+        printf("You are Male");
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: m
+You are Male
+
+Output2:
+enter character: v
+Sorry! not match
+
+-------------------------------------------------------------------------------
+
+Answer 13)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'f'){ 
+        printf("You are Female");
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output1:
+enter character: f
+You are Female
+
+Output2:
+enter character: v
+Sorry! not match
+
+----------------------------------------------------------------------------
+
+Answer 14)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 'w'){ 
+        int a,b,c;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("Real values of a = %d & that of b = %d",a,b);
+        c=a;
+        a=b;
+        b=c;
+        printf("Swap values of a = %d & that of b = %d",a,b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output 1:
+enter character: w
+Enter 2 numbers: 12
+23
+Real values of a = 12 & that of b = 23Swap values of a = 23 & that of b = 12
+
+Output 2:
+enter character: q
+Sorry! not match
+
+------------------------------------------------------------------------------------------
+
+Answer 15)
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter character: ");
+    scanf("%c", &num);
+    if(num == 's'){ 
+        int a,b,c;
+        printf("Enter 2 numbers: ");
+        scanf("%d %d",&a,&b);
+        printf("Real values of a = %d & that of b = %d\n",a,b);
+        a= a+b;
+        b = a - b;
+        a = a - b;
+        printf("Swap values of a = %d & that of b = %d",a,b);
+    }
+    else{
+        printf("Sorry! not match");
+    }
+}
+
+Output 1:
+enter character: s
+Enter 2 numbers: 23
+15
+Real values of a = 23 & that of b = 15
+Swap values of a = 15 & that of b = 23
+
+Output2:
+enter character: w
+Sorry! not match
+
+-----------------------------------------------------------------------------
+
+Answer16)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num % 5 == 0){ 
+        printf("number is divisible by 5");
+    }
+    else{
+        printf("Sorry! not divisible");
+    }
+}
+
+Output 1:
+enter number: 5
+number is divisible by 5
+
+Output2:
+enter number: 7
+Sorry! not divisible
+
+-------------------------------------------------------------------------------------------
+
+Answer 17)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num % 7 == 0){ 
+        printf("number is divisible by 7");
+    }
+    else{
+        printf("Sorry! not divisible");
+    }
+}
+
+Output 1:
+enter number: 7
+number is divisible by 7
+
+Output 2:
+enter number: 10
+Sorry! not divisible
+
+-----------------------------------------------------------------------------------------------
+
+Answer 18)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num % 67 == 0){ 
+        printf("number is divisible by 67");
+    }
+    else{
+        printf("Sorry! not divisible");
+    }
+}
+
+Output 1:
+enter number: 67
+number is divisible by 67
+
+Output 2:
+enter number: 7
+Sorry! not divisible
+
+-------------------------------------------------------------------------------------------------
+
+Answer19)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num > 18){ 
+        printf("valid voter");
+    }
+    else{
+        printf("Sorry! Invalid user");
+    }
+}
+
+Output 1:
+enter number: 18
+Sorry! Invalid user
+
+Output 2:
+enter number: 20
+valid voter
+
+----------------------------------------------------------------------------------------------------
+
+Answer 20)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num == 1){ 
+        printf("One");
+    }
+    else{
+        printf("Sorry! Not Match");
+    }
+}
+
+Output 1:
+enter number: 1
+One
+
+Output2:
+enter number: 2
+Sorry! Not Match
+
+----------------------------------------------------------------------------------------
+
+Answer 21)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num == 2){ 
+        printf("two");
+    }
+    else{
+        printf("Sorry! Not Match");
+    }
+}
+
+Output 1:
+enter number: 2
+two
+
+Output2:
+enter number: 1
+Sorry! Not Match
+
+--------------------------------------------------------------------------------------------
+
+Answer 22)
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter number: ");
+    scanf("%d", &num);
+    if(num == 3){ 
+        printf("Three");
+    }
+    else{
+        printf("Sorry! Not Match");
+    }
+}
+
+Output 1:
+enter number: 3
+Three
+
+Output2:
+enter number: 2
+Sorry! Not Match
+
+------------------------------------------------------------------------------------------
+

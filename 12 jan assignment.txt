@@ -1,0 +1,245 @@
+Answer1)
+#include <stdio.h>
+int main()
+{
+    char alpha;
+    printf("enter e for checking even or o for checking odd\n");
+    scanf("%c", &alpha);
+    if(alpha == 'e'){
+        int a;
+        printf("enter number\n");
+        scanf("%d",&a);
+        if(a % 2 == 0){ printf("%d is even",a); }
+        else printf("%d is not even",a);
+    }
+    else if(alpha == 'o'){
+        int a;
+        printf("enter number\n");
+        scanf("%d",&a);
+        if(a % 2 != 0){ printf("%d is odd",a); }
+        else printf("%d is not odd",a);
+    }
+    else printf("not match");
+    return 0;
+}
+
+Output)
+enter e for checking even or o for checking odd
+e
+enter number
+2
+2 is even
+------------------------------------------------------------------
+Answer2)
+# include <stdio.h>
+int main(){
+    char ch;
+    printf("enter character\n");
+    scanf("%c",&ch);
+    if(ch == 'v'){
+        int age;
+        printf("enter age\n");
+        scanf("%d",&age);
+        if(age > 18) printf("valid voter");
+        else printf("Invalid");
+    }
+    else if(ch == 'g'){
+        char a;
+        printf("enter character: \n");
+        scanf("%c",&a);
+        if(a == 'm' || a == 'M') printf("Male");
+        else if(a == 'f' || a == 'F') printf("Female");
+        else printf("other");
+    }
+    else if(ch == 't'){
+        int a,b;
+        printf("enter 1st number\n");
+        scanf("%d",&a);
+        printf("enter 2nd number\n");
+        scanf("%d",&b);
+        if(a>b){
+            printf("%d maximum", a);
+        }
+        else printf("%d maximum", b);
+    }
+    else if(ch == 'h'){
+            int a,b,c;
+            printf("enter 1st number\n");
+            scanf("%d",&a);
+            printf("enter 2nd number\n");
+            scanf("%d",&b);
+            printf("enter 3rd number\n");
+            scanf("%d",&c);
+            if((a>b) && (a>c)){
+                printf("%d maximum", a);
+            }
+            else if((a<b) && (b>c)){
+                printf("%d maximum", b);
+            }
+            else printf("%d maximum", c);
+    }
+    else if(ch == 'c'){
+        char a;
+        printf("enter character\n");
+        scanf("%c",&a);
+        if(a=='a' || a=='e' || a == 'i' || a=='o' || a=='u') printf("vowel");
+        else printf("consonant");
+    }
+    return 0;
+}
+Output:
+enter character
+v
+enter age
+15
+Invalid
+------------------------------------------------------------------
+Answer3)
+#include <stdio.h>
+int main()
+{
+    char c;
+    printf("Enter character\n");
+    scanf("%c",&c);
+    if(c == 'c'){
+        char ch;
+        printf("Enter character\n");
+        scanf(" %c",&ch);
+        if(ch  == 'a'){ printf("apple"); }
+        else if(ch == 'b'){ printf("ball"); }
+        else if(ch == 'c'){ printf("cat"); }
+        else{ printf("not match"); }
+    }
+    else if(c == 'd'){
+        int ch;
+        printf("Enter number\n");
+        scanf("%d",&ch);
+        if(ch == 1){ printf("one"); }
+        else if(ch == 2){ printf("two"); }
+        else if(ch == 3){ printf("three"); }
+        else{ printf("not match"); }
+    }
+    else{ printf("Invalid"); }
+    return 0;
+}
+
+Output
+Enter character
+c
+Enter character
+a
+apple
+----------------------------------------------------------------------
+answer4)
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("enter character\n");
+    scanf("%c",&ch);
+    if(ch == 's'){
+        char v;
+        printf("enter character\n");
+        scanf(" %c",&v);
+        if(v == 'w'){
+            int a,b,c;
+            printf("enter a\n");
+            scanf("%d",&a);
+            printf("enter b\n");
+            scanf("%d",&b);
+            printf("REAL VALUE OF A: %d\n",a);
+            printf("REAL VALUE OF B: %d\n",b);
+            c = a;
+            a = b;
+            b = c;
+            printf("SWAP VALUE OF A: %d\n",a);
+            printf("SWAP VALUE OF B: %d",b);
+        }
+        else if(v == 'n'){
+            int a,b;
+            printf("enter a\n");
+            scanf("%d",&a);
+            printf("enter b\n");
+            scanf("%d",&b);
+            printf("REAL VALUE OF A: %d\n",a);
+            printf("REAL VALUE OF B: %d\n",b);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            printf("SWAP VALUE OF A: %d\n",a);
+            printf("SWAP VALUE OF B: %d",b);
+        }
+    }
+    return 0;
+}
+Output)
+enter character
+s
+enter character
+w
+enter a
+12
+enter b
+23
+REAL VALUE OF A: 12
+REAL VALUE OF B: 23
+SWAP VALUE OF A: 23
+SWAP VALUE OF B: 12
+-------------------------------------------------------------------------
+Answer5)
+#include <stdio.h>
+
+int main()
+{
+    int h,s,salary;
+    printf("Enter Temperature in celcius\n");
+    scanf("%d",&h);
+    float b = h * 9 / 5;
+    printf("%f F\n",(b) + 32);
+    printf("Enter Temperature in Fehrenheit\n");
+    scanf("%d",&s);
+    float d = s - 32;
+    printf("%f C", (d) * 5 / 9 );
+    return 0;
+}
+
+Output:
+Enter Temperature in celcius
+0
+32.000000 F
+Enter Temperature in Fehrenheit
+32
+0.000000 C
+-------------------------------------------------------------------------------
+Answer7)
+#include <stdio.h>
+int main()
+{
+    int h,s,salary;
+    printf("Enter holidays\n");
+    scanf("%d",&h);
+    printf("Enter salary\n");
+    scanf("%d",&s);
+    printf("Name: Snehil Sagar Jain\n");
+    printf("Address: Raja Park, Jaipur\n");
+    printf("Bank Details: psb\n");
+    if(h == 1){ salary = s; }
+    else if(h >= 2 && h < 5){ salary = s * 95 / 100; }
+    else if(h >= 5 && h <= 14){ salary = s * 90 / 100; printf("h=%d",h); }
+    else if(h == 15){ salary = s * 50 / 100; }
+    else{ salary = s * 0 / 100; }
+    printf("salary: %d\n",salary);
+    printf("holidays: %d",h);
+    return 0;
+}
+
+Output:
+Enter holidays
+5
+Enter salary
+12000
+Name: Snehil Sagar Jain
+Address: Raja Park, Jaipur
+Bank Details: psb
+h=5salary: 10800
+holidays: 5

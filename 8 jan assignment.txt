@@ -1,0 +1,265 @@
+Answer 1)
+#include <stdio.h>
+
+int main()
+{
+    int a; 
+    printf("ENTER FIRST INTEGER\n");
+    scanf("%d",&a);
+    
+    int c;
+    printf("ENTER SECOND INTEGER\n");
+    scanf("%d",&c);
+    
+    float b; 
+    printf("ENTER FIRST DECIMAL\n");
+    scanf("%f",&b);
+
+    float d;
+    printf("ENTER SECOND DECIMAL\n");
+    scanf("%f",&d);
+
+    char e; char f;// = 'w';
+    printf("ENTER FIRST CHARACTER\n");
+    scanf(" %c ",&e);
+
+    printf("ENTER SECOND CHARACTER\n");
+    scanf("%c",&f);
+
+    printf("%d\n",a);
+    printf("%f\n",b);
+    printf("%d\n",c);
+    printf("%f\n",d);
+    printf("%c\n",e);
+    printf("%c ",f);
+    return 0;
+}
+
+output:
+ENTER FIRST INTEGER
+34
+ENTER SECOND INTEGER
+12
+ENTER FIRST DECIMAL
+-6.7
+ENTER SECOND DECIMAL
+8.09
+ENTER FIRST CHARACTER
+o
+w
+ENTER SECOND CHARACTER
+34
+-6.700000
+12
+8.090000
+o
+w
+
+--------------------------------------------------
+
+Answer 2)
+#include <stdio.h>
+int main()
+{
+    char a,d;// = 'r';
+    //char e; char f;// = 'w';
+    printf("ENTER FIRST CHARACTER\n");
+    scanf(" %c ",&a);
+
+    int b = 12, c = -78;
+    //int a; 
+    printf("ENTER FIRST INTEGER\n");
+    scanf("%d",&b);
+    
+    //int c;
+    printf("ENTER SECOND INTEGER\n");
+    scanf("%d",&c);
+    
+    printf("ENTER SECOND CHARACTER\n");
+    scanf(" %c",&d);
+
+    //char d = 'y';
+    float e;// = 8.9;
+    //float b; 
+    printf("ENTER FIRST DECIMAL\n");
+    scanf("%f",&e);
+
+    int f;// = 16;
+    printf("ENTER THIRD INTEGER\n");
+    scanf("%d",&f);
+    
+    float g;// = -9.8;
+    //float d;
+    printf("ENTER SECOND DECIMAL\n");
+    scanf("%f",&g);
+    
+    printf("%c\n",a);
+    printf("%d\n",b);
+    printf("%d\n",c);
+    printf("%c\n",d);
+    printf("%f\n",e);
+    printf("%d\n",f);
+    printf("%f",g);
+
+Output:
+ENTER FIRST CHARACTER
+r
+12
+ENTER FIRST INTEGER
+ENTER SECOND INTEGER
+-78
+ENTER SECOND CHARACTER
+y
+ENTER FIRST DECIMAL
+8.9
+ENTER THIRD INTEGER
+16
+ENTER SECOND DECIMAL
+-9.8
+r
+12
+-78
+y
+8.900000
+16
+-9.800000
+
+---------------------------------------------------------
+
+Answer 3)
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("enter number1: ");
+    scanf("%d",&a);
+    printf("enter number2: ");
+    scanf("%d",&b);
+    printf("%d + %d = %d",a,b,a+b);
+}
+
+Output:
+enter number1: 23
+enter number2: 9
+23 + 9 = 32
+
+-------------------------------------------------------------
+
+Answer 4)
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("enter number1: ");
+    scanf("%d",&a);
+    printf("enter number2: ");
+    scanf("%d",&b);
+    printf("%d - %d = %d",a,b,a-b);
+}
+
+Output:
+enter number1: 23
+enter number2: 9
+23 - 9 = 14
+
+-------------------------------------------------------------
+
+Answer 5)
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("enter number1: ");
+    scanf("%d",&a);
+    printf("enter number2: ");
+    scanf("%d",&b);
+    printf("%d * %d = %d",a,b,a*b);
+}
+
+Output:
+enter number1: 12
+enter number2: 3
+12 * 3 = 36
+
+----------------------------------------------------------------
+
+Answer 6)
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("enter number1: ");
+    scanf("%d",&a);
+    printf("enter number2: ");
+    scanf("%d",&b);
+    printf("%d / %d = %d",a,b,a/b);
+}
+
+Output:
+enter number1: 66
+enter number2: 3
+66 / 3 = 22
+
+---------------------------------------------------------------------
+
+Answer 7)
+#include<stdio.h>
+int main(){
+    //56+78+34+12
+    int a,b,c,d;
+    printf("Enter 4 integers(with space between): ");
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    printf("%d + %d + %d + %d = %d",a,b,c,d,a+b+c+d);
+}
+
+Output:
+Enter 4 integers(with space between): 56 78 34 12
+56 + 78 + 34 + 12 = 180
+
+---------------------------------------------------------------------
+
+Answer8)
+#include<stdio.h>
+int main(){
+    //12*4-6/2
+    int a,b,c,d;
+    printf("Enter 4 integers(with space between): ");
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    printf("%d * %d - %d / %d = %d",a,b,c,d,a*b-c/d);
+}
+
+Output:
+Enter 4 integers(with space between): 12 4 6 2
+12 * 4 - 6 / 2 = 45
+
+--------------------------------------------------------------------
+
+Answer 9)
+#include<stdio.h>
+int main(){
+    //1.2*2-(8/2)
+    float a;
+    int b,c,d;
+    printf("Enter 4 integers(with space between): ");
+    scanf("%f %d %d %d",&a,&b,&c,&d);
+    printf("%f * %d - (%d / %d) = %f",a,b,c,d,a*b-(c/d) );
+}
+
+Output:
+Enter 4 integers(with space between): 1.2 2 8 2
+1.200000 * 2 - (8 / 2) = -1.600000
+
+--------------------------------------------------------------------
+
+Answer 10)
+#include<stdio.h>
+int main(){
+    //12*7+45-(34-3)+3.4 -8.9
+    float f,g;
+    int a,b,c,d,e;
+    printf("Enter 7 integers(with space between): ");
+    scanf("%d %d %d %d %d %f %f",&a,&b,&c,&d,&e,&f,&g);
+    printf("%d * %d + %d - (%d - %d) + %f - %f = %f",a,b,c,d,e,f,g,a*b+c-(d-e)+f - g );
+}
+
+Output:
+Enter 7 integers(with space between): 12 7 45 34 3 3.4 8.9
+12 * 7 + 45 - (34 - 3) + 3.400000 - 8.900000 = 92.500000
+
+------------------------------------------------------------------

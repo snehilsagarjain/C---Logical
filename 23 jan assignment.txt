@@ -1,0 +1,191 @@
+Answer 1)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=3;i++){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+Output:
+*
+**
+***
+
+Answer 2)
+#include <stdio.h>
+int main(){
+	for(int i=3;i>=1;i--){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+***
+**
+*
+
+Answer 3)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=3;i++){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	for(int i=3;i>=1;i--){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+*
+**
+***
+***
+**
+*
+
+Answer 4)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=3;i++){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	for(int i=2;i>=1;i--){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+*
+**
+***
+**
+*
+
+Answer 5)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=5;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d",i);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+1
+22
+333
+4444
+55555
+
+Answer 6)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=5;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d ",j);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+1
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+Answer 7)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=5;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d ",j%2);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+1
+1 0 
+1 0 1
+1 0 1 0
+1 0 1 0 1 
+
+Answer 8)
+#include <stdio.h>
+int main(){
+	for(int i=1;i<=5;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d ",i%2);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+1
+0 0 
+1 1 1 
+0 0 0 0
+1 1 1 1 1
+
+Answer 9)
+#include <stdio.h>
+int main(){
+    int k= 1;
+	for(int i=1;i<=4;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d ",k);
+			k++;
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+1
+2 3 
+4 5 6 
+7 8 9 10 
+
+Answer 10)
+#include <stdio.h>
+int main(){
+    int k= 1;
+	for(int i=1;i<=4;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d ",k*2);
+			k++;
+		}
+		printf("\n");
+	}
+	return 0;
+}
+Output:
+2
+4 6
+8 10 12
+14 16 18 20 

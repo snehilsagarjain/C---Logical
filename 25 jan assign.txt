@@ -1,0 +1,254 @@
+answer1)
+#include <stdio.h>
+void show1();
+void show2();
+void show3();
+void show4();
+int main()
+{
+    show1();
+    show2();
+    show3();
+    show4();
+    return 0;
+}
+void show1(){ printf("hello\n"); }
+void show2(){ printf("how are you\n"); }
+void show3(){ printf("welcome to jaipur\n"); }
+void show4(){ printf("my name is _"); }
+
+Output:
+hello
+how are you
+welcome to jaipur
+my name is _
+
+answer2)
+#include <stdio.h>
+void add();
+void sub();
+void multi();
+void divi();
+int main()
+{
+    add();
+    sub();
+    multi();
+    divi();
+    return 0;
+}
+void add(){ 
+    int a,b; 
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    float c=a/b;
+    printf("%f",c);
+}
+void sub2(){ 
+    int a,b; 
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    float c=a - b;
+    printf("%f",c);
+}
+void multi(){ 
+    int a,b; 
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    float c=a*b;
+    printf("%f",c); 
+}
+void divi(){ 
+    int a,b; 
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    float c=a/b;
+    printf("%f",c);
+}
+
+Output:
+enter a and b
+1 2
+3enter a and b
+2 3
+-1enter a and b
+2 5 
+10enter a and b
+4 2
+2.000000
+
+answer3)
+#include <stdio.h>
+void swap();
+void voter();
+void vowel();
+void gender();
+void maximum();
+void area();
+int main()
+{
+    swap();
+    voter();
+    vowel();
+    gender();
+    maximum();
+    area();
+    return 0;
+}
+void swap(){ 
+    int a,b; 
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    int c=a;
+    a=b;
+    b=c;
+    printf("swap value of a=%d and b=%d\n",a,b);
+}
+void voter(){ 
+    int a;
+    printf("enter a\n");
+    scanf("%d",&a);
+    if(a>18) printf("valid voter\n");
+    else printf("Invalid voter\n");
+}
+void vowel(){ 
+    char a;
+    printf("enter character\n");
+    scanf(" %c ", &a );
+    if(a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u'){
+        printf("vowel\n");
+    }
+    else printf("consonant\n");
+}
+void gender(){ 
+    char c;
+    printf("enter m for Male and f for Female\n");
+    scanf(" %c ", &c );
+    if(c=='m'){ printf("Male\n"); }
+    else if(c=='f'){ printf("Female\n"); }
+}
+void maximum(){
+    int a=5,b=3,c=2;
+    if(a>b && a>c){
+        printf("%d is maximum\n",a);
+    }
+    else if(b>a && b>c){
+        printf("%d is maximum\n",b);        
+    }
+    else{
+        printf("%d is maximum\n",c);
+    }
+}
+void area(){
+    char c;
+    printf("enter a for area and v for volume\n");
+    scanf("%c ",&c);
+    if(c=='a'){
+        int l=2,b=3;
+        printf("area=%d\n",(l*b));
+    }
+    else if(c == 'v'){
+        int l=2,b=3,h=4;
+        printf("volume=%d\n",(l*b*h));
+    }
+}
+
+answer4
+#include <stdio.h>
+int reverse();
+int pallindrome();
+int Armstrong();
+int count();
+int factorial();
+int fabinacci();
+int sum();
+int main(){ 
+    reverse();
+    pallindrome();
+    Armstrong();
+    count();
+    factorial();
+    fabinacci();
+    sum();
+}
+    int reverse(){
+        int num = 6312, rem, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        printf("%d",sum);
+        return 0;
+    }
+    int pallindrome(){
+        int num, m;
+        printf("enter number1\n");
+        scanf("%d",&num);
+        m = num;
+        int rem, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if(m == sum){ printf("pallindrome\n"); }
+        else{ printf("not\n"); }
+        return 0;
+    }
+    int Armstrong(){
+        int num = 152, rem, sum = 0, temp = num;
+        while(num > 0){
+            rem = num % 10;
+            num = num / 10;
+            sum = sum + rem * rem * rem;
+        }
+        if(temp == sum) printf("Armstrong");
+        else printf("not");
+        return 0;
+    }
+    int count(){
+        int num = 67437, count = 0;
+        while(num > 0){
+            num = num / 10;
+            count++;
+        }
+        printf("%d",count);
+        return 0;
+    }
+    int factorial(){
+        int n=5;
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact * i;
+        }
+        printf("%d",fact);
+        return 0;
+    }
+    int fabinacci(){
+        int n=5,n1=0,n2=1,n3;
+        printf("%d %d",n1,n2);
+        for(int i=1;i<=n;i++){
+            n3=n1+n2;
+            printf("%d ",n3);
+            n1 = n2;
+            n2 = n3;
+        }
+        return 0;
+    }
+    int sum(){
+        int num = 12573, rem = 0, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            num = num / 10;
+            sum = sum + rem;
+        }
+        printf("%d",sum);
+        return 0;
+    }
+
+Output:
+2136enter number1
+12121
+pallindrome
+not51200 11 2 3 5 8 18

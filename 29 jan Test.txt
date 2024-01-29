@@ -1,0 +1,247 @@
+answer1)
+#include <stdio.h>
+void fibonacci(int a);
+int main()
+{
+    int a;
+    printf("enter input for fibonacci:\n");
+    scanf("%d",&a);
+    fibonacci(a);
+    return 0;
+}
+void fibonacci(int a){
+    int i = 0; int j=1;
+    printf("%d ",i); printf("%d ",j);
+    for(int k=1;k<=(a-2);k++){
+        printf("%d ", k);
+    }
+}
+
+Output:
+enter input for fibonacci:
+5
+0 1 1 2 3 
+
+answer2)
+#include <stdio.h>
+void swap(int a, int b);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    printf("enter number2:\n");
+    scanf("%d",&b);
+    printf("values of a and b are %d and %d\n",a,b);
+    swap(a,b);
+    return 0;
+}
+void swap(int a, int b){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("swap values are %d and %d",a,b);
+}
+Output:
+enter number1:
+2
+enter number2:
+3
+values of a and b are 2 and 3
+swap values are 3 and 2
+
+answer3)
+#include <stdio.h>
+int fact(int a);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    printf("factorial = %d",fact(a));
+    return 0;
+}
+int fact(int a){
+    int fact = 1;
+    for(int i=1;i<=a;i++){
+        fact = fact * i;
+    }
+    return fact;
+}
+Output:
+enter number1:
+5
+factorial = 120
+
+answer4)
+#include <stdio.h>
+int sumofdigits(int a);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    printf("Sum of digits = %d",sumofdigits(a));
+    return 0;
+}
+int sumofdigits(int a){
+    int rem =0;
+    int sum =0;
+    while(a>0){
+        rem = a%10;
+        a = a/10;
+        sum = sum + rem;
+    }
+    return sum;
+}
+Output:
+enter number1:
+153
+Sum of digits = 9
+
+answer5)
+#include <stdio.h>
+void armstrong(int a);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    armstrong(a);
+    return 0;
+}
+void armstrong(int a){
+    int rem =0;
+    int temp = a;
+    int sum =0;
+    while(a>0){
+        rem = a%10;
+        a = a/10;
+        sum = sum + rem*rem*rem;
+    }
+    if(temp == sum) printf("armstrong number");
+    else printf("Not an armstrong number");
+}
+Output:
+enter number1:
+153
+armstrong number
+
+answer6)
+#include <stdio.h>
+void pattern();
+int main(){
+    pattern();
+    return 0;
+}
+void pattern(){
+    for(int i=6;i>=1;i--){
+        if(i==1 || i==6){
+            for(int j=1;j<=6;j++){
+                printf("* ");
+            }
+        }
+        else{
+            for(int j=1;j<=6;j++){
+                if(i==j)    printf("* ");
+                else printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+Output:
+* * * * * * 
+        *   
+      *     
+    *       
+  *         
+* * * * * * 
+
+answer7)
+#include <stdio.h>
+void pallindrome(int a);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    pallindrome(a);
+    return 0;
+}
+void pallindrome(int a){
+    int rem =0;
+    int temp = a;
+    int sum =0;
+    while(a>0){
+        rem = a%10;
+        a = a/10;
+        sum = sum * 10 + rem;
+    }
+    if(temp == sum) printf("pallindrome number");
+    else printf("Not an palindrome number");
+}
+Output:
+enter number1:
+121
+pallindrome number
+
+answer8)
+#include <stdio.h>
+int countdigits(int a);
+int main(){
+    int a,b;
+    printf("enter number1:\n");
+    scanf("%d",&a);
+    printf("Sum of digits = %d",countdigits(a));
+    return 0;
+}
+int countdigits(int a){
+    int count = 0;
+    int rem =0;
+    while(a>0){
+        rem = a%10;
+        a = a/10;
+        count++;
+    }
+    return count;
+}
+Output:
+enter number1:
+153
+Sum of digits = 3
+
+answer9)
+#include <stdio.h>
+int main(){
+    for(int i=2;i<=10;i++){
+        for(int j=1;j<=10;j++){
+            printf("%d ",i*j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+Output:
+2 4 6 8 10 12 14 16 18 20 
+3 6 9 12 15 18 21 24 27 30 
+4 8 12 16 20 24 28 32 36 40 
+5 10 15 20 25 30 35 40 45 50 
+6 12 18 24 30 36 42 48 54 60 
+7 14 21 28 35 42 49 56 63 70 
+8 16 24 32 40 48 56 64 72 80 
+9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100 
+
+answer10)
+#include <stdio.h>
+int main(){
+    char a;
+    printf("enter M for Male and F for Female:\n");
+    scanf("%c",&a);
+    if(a == 'M') printf("Male");
+    else if(a == 'F') printf("Female");
+    return 0;
+}
+Output:
+enter M for Male and F for Female:
+M
+Male
+----------------------------------------------------
+		End of Test
+----------------------------------------------------
